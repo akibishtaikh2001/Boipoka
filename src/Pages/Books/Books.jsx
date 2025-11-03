@@ -1,0 +1,20 @@
+import React, { useEffect, useState } from 'react';
+
+const Books = () => {
+    const [allBooks, setAllBooks] = useState([]);
+
+    useEffect(()=>{
+        fetch('booksData.json')
+        .then(rse => rse.json())
+        .then(data => {
+           setAllBooks(data)
+        })
+    },[])
+    return (
+        <div>
+            <h1>hello ami books</h1>
+        </div>
+    );
+};
+
+export default Books;
