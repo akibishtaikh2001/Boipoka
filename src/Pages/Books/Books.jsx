@@ -26,7 +26,7 @@ const Books = ({ data }) => {
             </Suspense>
         </div>
     );
-};
+}; 
 
 export default Books;
-  
+   
